@@ -18,6 +18,7 @@ class Forum extends StatelessWidget {
       home: HomePage(),
       theme: ThemeData(
         primaryColor: Colors.red,
+        splashColor: Colors.orangeAccent,
         textTheme: TextTheme(
           headline1: TextStyle(
               fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
