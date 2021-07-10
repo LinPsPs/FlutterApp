@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:test_app/model/article_meta.dart';
+import 'package:forum/model/article_meta.dart';
 
 class ArticleCard extends StatelessWidget {
-  ArticleCard({this.title, this.description, this.articleMeta});
+  ArticleCard(this.title, this.description, this.articleMeta);
 
   final String title;
   final ArticleMeta articleMeta;

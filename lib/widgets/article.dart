@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 
 class Article extends StatelessWidget {
-  Article({this.title, this.content});
+  Article(this.title, this.content);
 
   final String title;
   final String content;

@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:test_app/home.dart';
+import 'package:forum/pages/home_page.dart';
+import 'package:forum/pages/post_page.dart';
 
 void main() {
   SystemChrome.setPreferredOrientations(
@@ -15,7 +16,11 @@ class Forum extends StatelessWidget {
     return MaterialApp(
       title: 'Forum',
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      initialRoute: '/home',
+      routes: {
+        '/home' : (context) => HomePage(),
+        '/editor': (context) => PostPage(),
+      },
       theme: ThemeData(
         primaryColor: Colors.red,
         splashColor: Colors.orangeAccent,

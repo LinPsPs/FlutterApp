@@ -1,13 +1,6 @@
-import 'package:flutter/cupertino.dart';
-
 class ArticleMeta {
-  ArticleMeta({
-    @required this.userID,
-    @required this.userName,
-    @required this.date,
-    @required this.read,
-    @required this.reply,
-  });
+
+  ArticleMeta(this.userID, this.userName, this.date, this.read, this.reply);
 
   final String userID;
   final String userName;

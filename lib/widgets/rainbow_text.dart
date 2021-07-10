@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class RainbowText extends StatelessWidget {
 
   final String text;
-  final rainbow_grgradientadient = LinearGradient(colors: [
+  final rainbowGrgradientadient = LinearGradient(colors: [
     Colors.red,
     Colors.pink,
     Colors.purple,
@@ -28,7 +28,7 @@ class RainbowText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ShaderMask(
-      shaderCallback: (bounds) => rainbow_grgradientadient.createShader(
+      shaderCallback: (bounds) => rainbowGrgradientadient.createShader(
         Rect.fromLTWH(0, 0, bounds.width, bounds.height),
       ),
       child: Text(
